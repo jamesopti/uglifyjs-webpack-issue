@@ -2,15 +2,26 @@ import React from 'react'
 import ReactCodeMirror from './codemirror';
 const USER =  'USER';
 
+const initialValue = `HEy
+HERE
+IS 
+SOME
+CODE
+`;
+
 class Dashboard extends React.Component {
-  renderUser(usr) {
+  state = {
+    code: initialValue,
+  };
+
+  static renderUser(usr) {
     console.log('Rendering markup for ' + usr);
     return (
       <span key="usrName">{ usr }</span>
     )
   }
 
-  update(e) {
+  static update(e) {
     console.log('update');
   }
 
@@ -18,7 +29,7 @@ class Dashboard extends React.Component {
     return (
       <div>
 
-        <h2> Welcome, { this.renderUser(USER) }, to the Webpack Playground</h2>
+        <h2> Welcome, { Dashboard.renderUser(USER) }, to the Webpack Playground</h2>
 
         <ReactCodeMirror
           onChange={ this.update }
