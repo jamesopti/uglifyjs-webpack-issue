@@ -1,3 +1,11 @@
+# Webpack Playground
+
+
+## DEMO 1
+Load a codemirror component and see why its breaking when uglified.
+
+
+## DEMO 2
 This test demonstrates two different ways of importing a function, and the effect
 on the bundle of each way.
 

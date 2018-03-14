@@ -2,7 +2,7 @@ import React from 'react'
 import ReactCodeMirror from './codemirror';
 const USER =  'USER';
 
-const initialValue = `HEy
+const initialValue = `HEY
 HERE
 IS 
 SOME
