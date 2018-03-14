@@ -1,0 +1,24 @@
+{
+  "name": "tree-shaking-test",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "codemirror": "~5.30.0",
+    "css-loader": "~0.8.0",
+    "csslint": "~0.10.0",
+    "eslint": "~4.4.1",
+    "jshint": "~2.8.0",
+    "style-loader": "~0.8.3",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
+  }
+}
