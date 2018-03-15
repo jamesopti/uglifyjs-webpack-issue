@@ -1,5 +1,4 @@
 const path = require('path');
-const webpack = require('webpack');
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
@@ -12,19 +11,10 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
-  plugins: [],
-
   module: {
     rules: [
       { test: /\.css$/, use: [ { loader: 'style-loader' }, { loader: 'css-loader' } ] },
-      {
-        test: [
-          /\/src\/(?:.*)\.js$/,
-        ],
-        use: {
-          loader: 'babel-loader',
-        },
-      },
+      { test: [/\/src\/(?:.*)\.js$/], use: { loader: 'babel-loader' } },
     ]
   },
 
@@ -39,16 +29,6 @@ module.exports = {
           keep_fnames: true,
         },
       }),
-    ],
-    splitChunks: {
-      cacheGroups: {
-        vendor: {
-          test: /([\\\/]node_modules[\\\/]|src[\\\/]js[\\\/]lib)/,
-          name: 'vendor',
-          chunks: 'initial',
-          filename: '[name].js',
-        },
-      },
-    },
+    ]
   }
 };
