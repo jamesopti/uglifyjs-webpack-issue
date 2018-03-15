@@ -9,4 +9,4 @@ Open index.html
 
 Look at JS error in console.
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png);
+![](https://raw.githubusercontent.com/jamesopti/uglifyjs-webpack-issue/master/codemirror_error.png)
