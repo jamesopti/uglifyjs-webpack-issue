@@ -26,6 +26,9 @@ module_working_1 OK
 two
 module_working_2 OK
 
+two
+two
+module_working_3 OK
 
 *** MAIN END ***
 ```
@@ -53,6 +56,10 @@ module_working_1 OK
 
 two
 module_working_2 OK
+
+two
+two
+module_working_3 OK
 ```
 
 Repeating the same steps with `webpack.mode = 'development'` shows the expected output.

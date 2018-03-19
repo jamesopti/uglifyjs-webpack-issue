@@ -26,4 +26,12 @@ try {
   console.log(err);
 }
 
+try {
+  // Should console.log "two"
+  require('./module_working_3');
+  console.log('module_working_3 OK \n\n');
+} catch(err) {
+  console.log(err);
+}
+
 console.log('*** MAIN END ***');

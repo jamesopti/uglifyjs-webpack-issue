@@ -1,3 +1,4 @@
+// FIX: Remove outer IIFE used for module resolution (AMD vs CommonJS vs Global)
 (function() {
   function getMaxSeverity(ax, bx) {
     if (ax === "error") {
