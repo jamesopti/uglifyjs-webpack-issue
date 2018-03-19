@@ -11,7 +11,7 @@
 
 `node dist/bundle.js`
 
-###Expected
+### Expected
 
 ```javascript
 *** MAIN START ***
@@ -19,7 +19,7 @@ two
 *** MAIN END ***
 ```
 
-###Actual
+### Actual
 ```javascript
 *** MAIN START ***
 ReferenceError: bx is not defined
