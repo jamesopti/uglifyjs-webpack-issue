@@ -11,22 +11,16 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
 
-  module: {
-    rules: [
-      { test: /\.css$/, use: [ { loader: 'style-loader' }, { loader: 'css-loader' } ] },
-      { test: [/\/src\/(?:.*)\.js$/], use: { loader: 'babel-loader' } },
-    ]
-  },
-
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
         cache: true,
         parallel: true,
         uglifyOptions: {
-          mangle: false,
-          keep_classnames: true,
-          keep_fnames: true,
+          // This compress option fixes the issue.
+          compress: {
+           // inline: 1,
+          },
         },
       }),
     ]
