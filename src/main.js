@@ -3,6 +3,7 @@ console.log('*** MAIN START ***');
 try {
   // Should console.log "two"
   require('./module_broken');
+  console.log('module_broken OK \n\n');
 } catch(err) {
   console.log('Testing module_broken error:');
   console.log(err);
